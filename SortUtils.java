@@ -21,4 +21,20 @@ public class SortUtils {
             }
         }
     }
+
+    /**
+     * Быстрая сотрировка
+     * 
+     * @param arr
+     */
+    public static void quikSort(int[] arr) {
+        if (arr == null)
+            return;
+        quikSort(arr, 0, arr.length - 1);
+    }
+
+    private static void quikSort(int[] arr, int start, int end) {
+
+    }
+
 }
