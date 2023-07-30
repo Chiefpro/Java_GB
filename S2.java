@@ -1,3 +1,5 @@
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class S2 {
 
@@ -19,6 +21,8 @@ public class S2 {
         String str3 = "abccfba";
         boolean flag = palindrom(str3);
         System.out.println(flag);
+
+        task4();
     
     
     }
@@ -104,6 +108,22 @@ public class S2 {
         return true;
     }
 
+    //------------------------------------------------------------------444444-------------------------
+    public static void task4(){
+        int n = 10;
+        String text = "TEST";
+        try{
+            FileWriter writer = new FileWriter("file.txt",true);
+            System.out.println("Получилось");
+            for (int i = 0; i < n; i++) {
+                writer.write(text);
+            }
+            writer.close();
+        }
+        catch (IOException e ){
+            System.out.println(e.getMessage());
+        }
+    }
 
     
 }
