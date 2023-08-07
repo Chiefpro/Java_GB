@@ -1,7 +1,3 @@
-// package ru.geekbrains.lesson4;
-
-
-
 public class Program {
 
     public static void main(String[] args) {
@@ -20,10 +16,10 @@ public class Program {
         res = hashMap.put("+79005554439", "Дарья8");
 
 
-        res = hashMap.get("+79005554436");
-
-        hashMap.remove("+79005554438");
-
+        //res = hashMap.get("+79005554436");
+        
+        //hashMap.remove("+79005554438");
+        
         for (HashMap.Entity element : hashMap) {
             System.out.println(element.key + " - " + element.value);
         }
@@ -31,5 +27,3 @@ public class Program {
     }
 
 }
-
-
