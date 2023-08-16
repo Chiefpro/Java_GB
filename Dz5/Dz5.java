@@ -23,4 +23,5 @@ public class Dz5 {
         System.out.println(phoneBook.getByName("Давид"));
         System.out.println(phoneBook.getAll());
     }
+    
 }
