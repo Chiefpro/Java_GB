@@ -13,4 +13,5 @@ public class HW_03 {
         String s = "Vasja"; int n = 4;
         System.out.printf("Привет %s %d раз!!!", s, n);
     }
+
 }
