@@ -10,5 +10,17 @@ public class HW_04 {
         System.out.println(0.0 / 0.0);
 
         //gergeffffg45
+        System.out.println(pow(2, 3));
+    }
+
+    public static double pow(int number, int power) {
+        if (power == 0) {
+            return 1;
+        }
+
+        int modulus = power < 0 ? power * -1 : power;
+        int result = (int)Math.pow(number, modulus);
+        return result;
+        
     }
 }
