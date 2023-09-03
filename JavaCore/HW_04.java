@@ -9,7 +9,7 @@ public class HW_04 {
         System.out.println( -100.0 / 0.0 );
         System.out.println(0.0 / 0.0);
 
-        //gergeffffg45
+        //gergeffffg456
         System.out.println(pow(2, 3));
     }
 
