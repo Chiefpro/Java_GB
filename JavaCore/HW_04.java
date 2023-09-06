@@ -24,6 +24,9 @@ public class HW_04 {
 
         System.out.println("Заработаю ли я себе на BMW?");
         System.out.println(getPrediction());
+        System.out.println((int)(Math.random()*6));
+        int x = (3 or 4);
+        System.out.println(x);
     }
 
     public static double pow(int number, int power) {
@@ -77,7 +80,7 @@ public class HW_04 {
     }
 
 
-    
+
 
     
 
