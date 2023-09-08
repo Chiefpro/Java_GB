@@ -16,16 +16,16 @@ public class HW_04 {
     private static final String VERY_DOUBTFUL = "Весьма сомнительно";
 
     public static void main(String[] args) {
-        System.out.println( -100.0 / 0.0 );
+        System.out.println(-100.0 / 0.0);
         System.out.println(0.0 / 0.0);
 
-        //gergeffffg456
+        // gergeffffg456
         System.out.println(pow(2, 3));
 
         System.out.println("Заработаю ли я себе на BMW?");
         System.out.println(getPrediction());
-        System.out.println((int)(Math.random()*6));
-        int x = (3 or 4);
+        System.out.println((int) (Math.random() * 6));
+        int x = (3 & 4);
         System.out.println(x);
     }
 
@@ -35,12 +35,12 @@ public class HW_04 {
         }
 
         int modulus = power < 0 ? power * -1 : power;
-        int result = (int)Math.pow(number, modulus);
+        int result = (int) Math.pow(number, modulus);
         return result;
     }
 
     public static String getPrediction() {
-        //напишите тут ваш код
+        // напишите тут ваш код
         String resalt = null;
         Random rn = new Random();
         int t = rn.nextInt(8);
@@ -69,19 +69,12 @@ public class HW_04 {
                 break;
             case 7:
                 resalt = VERY_DOUBTFUL;
-                break;    
-        
+                break;
+
             default:
                 break;
         }
         return resalt;
-
-        
     }
-
-
-
-
-    
 
 }
