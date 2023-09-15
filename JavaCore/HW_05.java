@@ -39,14 +39,9 @@ public class HW_05 {
             octalNumber = octalNumber / 10;
         }
         return decimalNumber;
-        
-
-
-        
+               
         
     }
-
-    
-
+  
     
 }
