@@ -39,9 +39,8 @@ public class HW_05 {
             decimalNumber = (int) (decimalNumber + (octalNumber % 10) * Math.pow(8, i++));
             octalNumber = octalNumber / 10;
         }
-        return decimalNumber;
-             
-       
+        return decimalNumber;            
+    
     }
     
 }
