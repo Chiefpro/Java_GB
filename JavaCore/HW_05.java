@@ -42,5 +42,6 @@ public class HW_05 {
         return decimalNumber;            
     
     }
+
     
 }
