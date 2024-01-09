@@ -7,6 +7,7 @@ public class HW_01_1 {
         checkSumSign();
         System.out.println("----------------------------");
         printColor(101);
+        compareNumbers(5,5);
 
     }
 
@@ -41,6 +42,9 @@ public class HW_01_1 {
             System.out.println("Green");
 
         System.out.println("====");
+    }
+    public static void compareNumbers(int a, int b){
+        System.out.println(a >= b ? "a >= b" : "a < b");
     }
 
 }
