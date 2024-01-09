@@ -1,5 +1,5 @@
 
-package JavaCore;
+// package JavaCore;
 // import java.util.regex.Pattern;
 
 public class HW_05 {
