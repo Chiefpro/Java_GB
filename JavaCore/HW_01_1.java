@@ -1,50 +1,36 @@
 
 public class HW_01_1 {
     public static void main(String[] args) {
-        proba1();
-        printThreeWords();
-        System.out.println("----------------------------");
-        checkSumSign();
-        System.out.println("----------------------------");
-        printColor(101);
-        compareNumbers(5,5);
+        clearScreen();
+        printThreeWords("Orange", "Banana", "Apple");
+        System.out.println(checkSumSign(2, -3));
+        System.out.println("-------------------------------");
+        System.out.println(printColor(101));
+        System.out.println("-------------------------------");
+        System.out.println(compareNumbers(2, 3));
 
     }
 
-    public static void proba1() {
 
-        System.out.println("Hello World!!!!");
-        System.out.println(5 + 7);
-        String str = "Proba pera";
-        System.out.println(str);
-        System.out.println("----------------------------");
+    public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 
-    public static void printThreeWords() {
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
+    public static void printThreeWords(String a, String b, String c) {
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println("-----------------------------------------");
     }
 
-    public static void checkSumSign() {
-        int a, b;
-        a = 5;
-        b = -12;
-        System.out.println((a + b) > 0 ? "Polozh" : "Otric");
+    public static String checkSumSign(int a, int b){
+        return ((a+b >= 0)?"Сумма положительная":"Сумма отрицательная");
     }
-
-    public static void printColor(int value) {
-        if (value <= 0)
-            System.out.println("red");
-        else if (value > 0 && value <= 100)
-            System.out.println("Ellow");
-        else
-            System.out.println("Green");
-
-        System.out.println("====");
+    public static String printColor(int value){
+        return value<=0?"Красный":value>100?"Зеленый":"Желтый";
     }
-    public static void compareNumbers(int a, int b){
-        System.out.println(a >= b ? "a >= b" : "a < b");
+    public static String compareNumbers(int a, int b){
+        return a>=b?"a >= b":"a < b";
     }
-
 }
