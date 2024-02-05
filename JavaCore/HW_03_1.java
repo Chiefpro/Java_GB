@@ -18,7 +18,7 @@ public class HW_03_1 {
         System.out.println("---------------------------------");
         int[] arrZad8 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         System.out.println(Arrays.toString(arrZad8));
-        System.out.println(Arrays.toString(zadanie8(arrZad8, 2)));
+        System.out.println(Arrays.toString(zadanie8(arrZad8, 11)));
 
     }
 
@@ -141,16 +141,16 @@ public class HW_03_1 {
         return a == b;
     }
 
-    public static int[] zadanie8(int[] arr, int n){
+    public static int[] zadanie8(int[] arr, int n) {
         int temp = arr[0];
-        // for (int i = 0; i < arr.length; i++) {
-        //     if (i+n==arr.length) {
-                
-        //     }
-        //     temp = arr[i];
-        //     arr[i] = arr[i+n];
-        //     arr[i+n] = temp;
-        //     }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < arr.length-1; j++) {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+
+        }
         return arr;
     }
 
