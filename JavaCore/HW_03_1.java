@@ -13,8 +13,13 @@ public class HW_03_1 {
         System.out.println("------------------------------");
         zadanie6(10);
         System.out.println("---------------------------------");
-        int[] arrZad7 = { 2, 2, 2, 1, 2, 2, 10, 1 };
+        int[] arrZad7 = { 2, 2, 2, 1, 2, 2, 10, 22 };
         System.out.println(zadanie7(arrZad7));
+        System.out.println("---------------------------------");
+        int[] arrZad8 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        System.out.println(Arrays.toString(arrZad8));
+        System.out.println(Arrays.toString(zadanie8(arrZad8, 2)));
+
     }
 
     public static void clearScreen() {
@@ -120,17 +125,30 @@ public class HW_03_1 {
         }
         System.out.println(sum);
         int a = 0;
-        int c = 0;
-        for (int i = 0; i < arr.length; i++) {
-            a += arr[i];
-            if (a == sum / 2) {
-                c = i;
-                
+        int b = 0;
+        for (int i : arr) {
+            if (a < sum / 2) {
+                a += i;
+            } else {
+                b += i;
             }
-
         }
+        System.out.println(a + " " + b);
 
-        return true;
+        return a == b;
+    }
+
+    public static int[] zadanie8(int[] arr, int n){
+        int temp = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (i+n==arr.length) {
+                n=
+            }
+            temp = arr[i];
+            arr[i] = arr[i+n];
+            arr[i+n] = temp;
+            }
+        return arr;
     }
 
 }
