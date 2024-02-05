@@ -13,7 +13,7 @@ public class HW_03_1 {
         System.out.println("------------------------------");
         zadanie6(10);
         System.out.println("---------------------------------");
-        int[] arrZad7 = { 2, 2, 2, 1, 2, 2, 10, 22 };
+        int[] arrZad7 = { 2, 2, 2, 1, 2, 2, 10, 23 };
         System.out.println(zadanie7(arrZad7));
         System.out.println("---------------------------------");
         int[] arrZad8 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -123,6 +123,9 @@ public class HW_03_1 {
         for (int i : arr) {
             sum += i;
         }
+        if (sum % 2 != 0) {
+            return false;
+        }
         System.out.println(sum);
         int a = 0;
         int b = 0;
@@ -140,14 +143,14 @@ public class HW_03_1 {
 
     public static int[] zadanie8(int[] arr, int n){
         int temp = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (i+n==arr.length) {
-                n=
-            }
-            temp = arr[i];
-            arr[i] = arr[i+n];
-            arr[i+n] = temp;
-            }
+        // for (int i = 0; i < arr.length; i++) {
+        //     if (i+n==arr.length) {
+                
+        //     }
+        //     temp = arr[i];
+        //     arr[i] = arr[i+n];
+        //     arr[i+n] = temp;
+        //     }
         return arr;
     }
 
