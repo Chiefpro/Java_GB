@@ -20,21 +20,18 @@ public class JR {
         }
         System.out.println(temp >= 0 ? "тепло" : "холодно");
 
-        int d1, d2, d3;
-        d1 = sc.nextInt();
-        d2 = sc.nextInt();
-        d3 = sc.nextInt();
+        String d1,d2;
+        
+        d2 = "DD";
+        System.out.println("vvedi D1");
+        d1 = sc.next();
+        System.out.println("Vvedi D2");
+        d2 = sc.next();
+        System.out.println(d1);
+        System.out.println(d2);
+        
+        System.out.println(d1.equalsIgnoreCase(d2)?"Одинаковые":"разные");
 
-        if (d2 == d3 && d2 == d1)
-            System.out.println(d2 + " " + d3 + " " + d1);
-        else if (d2 == d3)
-            System.out.println(d2 + " " + d3);
-        else if (d1 == d3)
-            System.out.println(d1 + " " + d3);
-        else if (d1 == d2)
-            System.out.println(d1 + " " + d2);
-        else
-            System.out.println("нет таких");
     }
 
 }
