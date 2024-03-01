@@ -29,12 +29,19 @@ public class JR {
 
     public static void zadacha41(int count){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Vvedi cho nibud = > ");
-        String voit = sc.nextLine();
-        while (count > 0) {
-            System.out.println(voit + " " + count);
-            count--;           
+        int sum = 0;
+        String dd = "";
+        while (true) {
+            System.out.print("Vvedi chislo ili END => ");
+            if (sc.hasNextInt())
+                sum += sc.nextInt();
+            else
+                dd = sc.nextLine();
+            if (dd.equalsIgnoreCase("end")) {
+            break;    
+            }
         }
+        System.out.println(sum);
     }
 
 }
