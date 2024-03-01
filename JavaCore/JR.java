@@ -3,31 +3,27 @@ import java.util.Scanner;
 public class JR {
     public static void main(String[] args) {
         // zadacha24();
-        zadacha41(10);
+        // zadacha41(10);
+        zadacha42(10, 20);
     }
 
     public static void zadacha24() {
         Scanner sc = new Scanner(System.in);
-        int temp =0 ;
+        int temp = 0;
         boolean br = true;
         while (br) {
             System.out.print("Введи температуру => ");
-            if (sc.hasNextInt()==true){
+            if (sc.hasNextInt() == true) {
                 temp = sc.nextInt();
                 br = false;
             }
-        
-            
-            
-            
-        }
-        System.out.println(temp >=0 ? "тепло" : "холодно");
 
-        
+        }
+        System.out.println(temp >= 0 ? "тепло" : "холодно");
 
     }
 
-    public static void zadacha41(int count){
+    public static void zadacha41(int count) {
         Scanner sc = new Scanner(System.in);
         int sum = 0;
         String dd = "";
@@ -38,10 +34,32 @@ public class JR {
             else
                 dd = sc.nextLine();
             if (dd.equalsIgnoreCase("end")) {
-            break;    
+                break;
             }
         }
         System.out.println(sum);
+    }
+
+    public static void zadacha42(int a, int b) {
+        while (a > 0) {
+            int c = b;
+            while (c > 0) {
+                if (a == 10 || a == 1) {
+                    System.out.print("Q");
+                }
+                else{
+                if (a < 10 && a > 1 && (c == b || c == 1)) {
+                    System.out.print("Q");
+                }
+                else {
+                    System.out.print(" ");
+                }
+            }
+                c--;
+            }
+            System.out.println();
+            a--;
+        }
     }
 
 }
