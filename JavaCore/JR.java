@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class JR {
     public static void main(String[] args) {
-        zadacha24();
+        // zadacha24();
+        zadacha41(10);
     }
 
     public static void zadacha24() {
@@ -24,6 +25,16 @@ public class JR {
 
         
 
+    }
+
+    public static void zadacha41(int count){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Vvedi cho nibud = > ");
+        String voit = sc.nextLine();
+        while (count > 0) {
+            System.out.println(voit + " " + count);
+            count--;           
+        }
     }
 
 }
