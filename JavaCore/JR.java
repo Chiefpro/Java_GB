@@ -85,20 +85,10 @@ public class JR {
 
     public static void zadacha44() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Vddedi stoky => ");
-        String stroka = sc.nextLine();
-        System.out.println();
-        System.out.print("Vvedi chislo => ");
-        int chislo = sc.nextInt();
-        int i = 0;
-        if (chislo > 0 && chislo <= 5) {
-            do {
-                System.out.println(stroka);
-                i++;
-            } while (i < chislo);
-        } else {
-            System.out.println(stroka);
-        }
+        System.out.print("Vvedi speed M-S => ");
+        int ms = sc.nextInt();
+        System.out.println(Math.round(ms*3.6));
+        
 
     }
 
