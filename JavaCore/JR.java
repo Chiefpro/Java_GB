@@ -1,4 +1,8 @@
+import java.io.InputStreamReader;
+import java.time.chrono.IsoEra;
 import java.util.Scanner;
+
+import org.xml.sax.InputSource;
 
 public class JR {
     public static void main(String[] args) {
@@ -88,7 +92,8 @@ public class JR {
         Scanner sc = new Scanner(System.in);
         System.out.print("Vvedi speed M-S => ");
         int ms = sc.nextInt();
-        System.out.println(Math.round(ms*3.6));
+        System.out.println(Math.round(ms * 3.6));
+
         
 
     }
