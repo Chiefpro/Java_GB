@@ -84,13 +84,22 @@ public class JR {
     }
 
     public static void zadacha44() {
-        for (int i = 0; i < 10; i++)
-{
-   int starCount = 10 - i;
-   for (int j = 0; j < starCount; j++)
-      System.out.print("*");
-   System.out.println();
-}
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Vddedi stoky => ");
+        String stroka = sc.nextLine();
+        System.out.println();
+        System.out.print("Vvedi chislo => ");
+        int chislo = sc.nextInt();
+        int i = 0;
+        if (chislo > 0 && chislo <= 5) {
+            do {
+                System.out.println(stroka);
+                i++;
+            } while (i < chislo);
+        } else {
+            System.out.println(stroka);
+        }
+
     }
 
 }
