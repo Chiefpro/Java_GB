@@ -15,6 +15,7 @@ public class JR {
         boolean br = true;
         while (br) {
             System.out.print("Введи температуру => ");
+
             if (sc.hasNextInt() == true) {
                 temp = sc.nextInt();
                 br = false;
