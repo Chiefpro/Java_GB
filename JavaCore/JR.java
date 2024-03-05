@@ -90,12 +90,17 @@ public class JR {
     }
 
     public static void zadacha44() {
-       int[] array = {1,3,4,5,-3,5,-67,4};
-       System.out.println(Arrays.toString(array));
-        for (int i = 0; i < array.length; i++) {
-            if (i%2==0) {
-                array[i] *= -1;
-            }
+        int[] array1 = { 0, 1, 2, 3, 4 };
+        int[] array2 = { 5, 6, 7, 8, 9 };
+        System.out.println(Arrays.toString(array1));
+        System.out.println(Arrays.toString(array2));
+        int[] array = new int[array1.length + array2.length];
+        for(int i = 0; i < array1.length; i++){
+            array[i] = array1[i];
+        }
+        System.out.println(Arrays.toString(array));
+        for(int i = array1.length; i<array.length; i++){
+            array[i] = array2[i-array1.length];
         }
         System.out.println(Arrays.toString(array));
     }
