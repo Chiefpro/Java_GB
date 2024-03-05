@@ -89,12 +89,15 @@ public class JR {
     }
 
     public static void zadacha44() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Vvedi speed M-S => ");
-        int ms = sc.nextInt();
-        System.out.println(Math.round(ms * 3.6));
-
-        
+       String[] strings = new String[10];
+       for (int i = 0; i < strings.length; i++) {
+        if (i%2 == 0)
+        strings[i] = "Chetnoe";
+        else
+        strings[i] = "Nechet";
+       }
+       System.out.println("Chetnoe???  "+strings[0]);
+        System.out.println("Nechet ????   "+strings[1]);
 
     }
 
