@@ -1,5 +1,6 @@
 import java.io.InputStreamReader;
 import java.time.chrono.IsoEra;
+import java.util.Arrays;
 import java.util.Scanner;
 
 import org.xml.sax.InputSource;
@@ -89,16 +90,14 @@ public class JR {
     }
 
     public static void zadacha44() {
-       String[] strings = new String[10];
-       for (int i = 0; i < strings.length; i++) {
-        if (i%2 == 0)
-        strings[i] = "Chetnoe";
-        else
-        strings[i] = "Nechet";
-       }
-       System.out.println("Chetnoe???  "+strings[0]);
-        System.out.println("Nechet ????   "+strings[1]);
-
+       int[] array = {1,3,4,5,-3,5,-67,4};
+       System.out.println(Arrays.toString(array));
+        for (int i = 0; i < array.length; i++) {
+            if (i%2==0) {
+                array[i] *= -1;
+            }
+        }
+        System.out.println(Arrays.toString(array));
     }
 
 }
