@@ -7,7 +7,7 @@ public class HW_05 {
      * Восьмеричный конвертер
      */
 
-     public static void main(String[] args) {
+    public static void main(String[] args) {
         int decimalNumber = 21;
         System.out.println("Десятичное число " + decimalNumber + " равно восьмеричному числу " + toOctal(decimalNumber));
         int octalNumber = 25;
@@ -45,7 +45,7 @@ public class HW_05 {
 
 
     
-    
+
     
     
     
