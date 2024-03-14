@@ -1,4 +1,4 @@
-package JavaCore;
+
 
 import java.util.Random;
 import java.util.Scanner;
@@ -21,8 +21,8 @@ public class HW_04 {
     private static int fieldSizeY;
     private static int scoreHuman;
     private static int scoreAi;
-    private static int RoundCounter;
-    private static int WinLength;
+    private static int roundCounter;
+    private static int winLength;
 
 
 
