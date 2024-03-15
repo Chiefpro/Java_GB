@@ -20,5 +20,16 @@ public class VendingMachine {
         return null;
     }
 
+    public Chocolate getChocolate(String name; int calories){
+        for (Product product : products){
+            if (product instanceof Chocolate){
+                Chocolate bootleOfChocolate = (Chocolate)product;
+                if (bootleOfChocolate.getName().equals(name) && bootleOfChocolate.getCalories() == calories)
+                    return bootleOfChocolate;
+            }
+        }
+        return null;
+    }
+
 
 }
