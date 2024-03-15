@@ -1,4 +1,4 @@
-package OOP.lesson1;
+ package lesson1;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ public class VendingMachine {
         return null;
     }
 
-    public Chocolate getChocolate(String name; int calories){
+    public Chocolate getChocolate(String name, int calories){
         for (Product product : products){
             if (product instanceof Chocolate){
                 Chocolate bootleOfChocolate = (Chocolate)product;

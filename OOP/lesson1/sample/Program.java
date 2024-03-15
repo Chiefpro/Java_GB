@@ -1,6 +1,6 @@
-package OOP.lesson1.sample;
+package lesson1.sample;
 
-import OOP.lesson1.Product;
+import lesson1.Product;
 
 public class Program {
 

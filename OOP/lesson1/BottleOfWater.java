@@ -1,4 +1,4 @@
-package OOP.lesson1;
+ package lesson1;
 
 public class BottleOfWater extends Product{
 

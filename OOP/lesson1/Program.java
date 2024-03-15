@@ -1,4 +1,4 @@
-package OOP.lesson1;
+ package lesson1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,10 +31,10 @@ public class Program {
         Product bottleOfMilk2 = new BottleOfMilk("Brand #3", "Name #3", 310, 0.5, 10);
         System.out.println(bottleOfMilk2.displayInfo());
 
-        Product bootleChocolate1 = new Chocolate("Brand #4", "Name #4", 300, 100);
+        Product bootleChocolate1 = new Chocolate("Brand #4", "Name #4", 10.5, 100.0);
         System.out.println(bootleChocolate1.displayInfo());
 
-        Product bootleChocolate2 = new Chocolate("Brand #2", "Name #5", 400, 150);
+        Product bootleChocolate2 = new Chocolate("Brand #2", "Name #5", 20.5, 150.);
         System.out.println(bootleChocolate2.displayInfo());
 
 
