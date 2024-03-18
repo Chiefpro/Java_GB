@@ -11,7 +11,7 @@ public class JR {
         // zadacha41(10);
         // zadacha42(10, 20);
         // zadacha43();
-        zadacha44();
+        //zadacha44();
     }
 
     public static void zadacha24() {
