@@ -1,6 +1,8 @@
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.time.chrono.IsoEra;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 import org.xml.sax.InputSource;
@@ -11,7 +13,8 @@ public class JR {
         // zadacha41(10);
         // zadacha42(10, 20);
         // zadacha43();
-        //zadacha44();
+        // zadacha44();
+        zadacha51(5);
     }
 
     public static void zadacha24() {
@@ -95,14 +98,47 @@ public class JR {
         System.out.println(Arrays.toString(array1));
         System.out.println(Arrays.toString(array2));
         int[] array = new int[array1.length + array2.length];
-        for(int i = 0; i < array1.length; i++){
+        for (int i = 0; i < array1.length; i++) {
             array[i] = array1[i];
         }
         System.out.println(Arrays.toString(array));
-        for(int i = array1.length; i<array.length; i++){
-            array[i] = array2[i-array1.length];
+        for (int i = array1.length; i < array.length; i++) {
+            array[i] = array2[i - array1.length];
         }
         System.out.println(Arrays.toString(array));
+    }
+
+    public static void zadacha51(int arrayLong) {
+        int[] array = new int[arrayLong];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введи числа => ");
+        for (int i = 0; i < array.length; i++) {
+            if (sc.hasNextInt()) {
+                array[i] = sc.nextInt();
+            } else {
+                System.out.println("Это не число ");
+                continue;
+            }
+        }
+        int temp;
+        System.out.println(Arrays.toString(array));
+        int[] array2 = Arrays.copyOf(array, array.length);
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length - 1; j++) {
+
+                if (array[j] < array[j + 1]) {
+                    temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+
+        }
+        System.out.println(Arrays.toString(array));
+        System.out.println("------------------");
+        System.out.println(Arrays.toString(array2) + " <= array2");
+        Arrays.sort(array2);
+        System.out.println(Arrays.toString(array2));
     }
 
 }
