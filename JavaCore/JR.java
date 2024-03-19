@@ -14,7 +14,7 @@ public class JR {
         // zadacha42(10, 20);
         // zadacha43();
         // zadacha44();
-        zadacha51(5);
+        //zadacha51(5);
     }
 
     public static void zadacha24() {
@@ -140,5 +140,7 @@ public class JR {
         Arrays.sort(array2);
         System.out.println(Arrays.toString(array2));
     }
+
+
 
 }
