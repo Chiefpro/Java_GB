@@ -15,6 +15,7 @@ public class JR {
         // zadacha43();
         // zadacha44();
         //zadacha51(5);
+        zadacha63();
     }
 
     public static void zadacha24() {
@@ -141,6 +142,9 @@ public class JR {
         System.out.println(Arrays.toString(array2));
     }
 
-
+    public static void zadacha63(){
+        Scanner sc = new Scanner(System.in);
+        
+    }
 
 }
