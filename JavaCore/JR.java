@@ -14,7 +14,7 @@ public class JR {
         // zadacha42(10, 20);
         // zadacha43();
         // zadacha44();
-        //zadacha51(5);
+        // zadacha51(5);
         zadacha63();
     }
 
@@ -142,9 +142,32 @@ public class JR {
         System.out.println(Arrays.toString(array2));
     }
 
-    public static void zadacha63(){
+    public static void zadacha63() {
         Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.println("Введи целое цисло => ");
+        n = sc.nextInt();
+        int[] array = new int[n];
         
+
+        if (n >= 0 && n % 2 != 0) {
+            array[0] = n;
+            for (int i = 1; i < array.length; i++) {
+                System.out.println("Введи целое цисло => ");
+                array[i] = sc.nextInt();
+            }
+        } else if (n >= 0 && n % 2 == 0) {
+            array[n - 1] = n;
+            for (int i = n - 2; i >= 0; i--) {
+                System.out.println("Введи целое цисло => ");
+                array[i] = sc.nextInt();
+            }
+
+        }
+        
+        System.out.println(Arrays.toString(array));
     }
 
+
+    
 }
