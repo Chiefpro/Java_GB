@@ -15,7 +15,8 @@ public class JR {
         // zadacha43();
         // zadacha44();
         // zadacha51(5);
-        zadacha63();
+        // zadacha63();
+        zadacha64();
     }
 
     public static void zadacha24() {
@@ -148,7 +149,6 @@ public class JR {
         System.out.println("Введи целое цисло => ");
         n = sc.nextInt();
         int[] array = new int[n];
-        
 
         if (n >= 0 && n % 2 != 0) {
             array[0] = n;
@@ -164,10 +164,33 @@ public class JR {
             }
 
         }
-        
+
         System.out.println(Arrays.toString(array));
     }
 
+    public static void zadacha64() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введи длину массива => ");
+        int n = sc.nextInt();
+        int[] array1 = new int[n];
+        System.out.println("Введи элементы массива => ");
+        for (int i = 0; i < array1.length; i++) {
+            array1[i] = sc.nextInt();
+        }
+        int min = array1[0];
+        int max = array1[0];
+        for (int i = 1; i < array1.length; i++) {
+            if (array1[i] < min) {
+                min = array1[i];
+            }
+        }
+        for (int i : array1) {
+            if (i > max) {
+                max = i;
+            }
+        }
+        System.out.printf("минимальное число в массиве => %d \n", min);
+        System.out.printf("максимальное число в массиве => %d", max);
+    }
 
-    
 }
