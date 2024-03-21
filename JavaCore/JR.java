@@ -9,14 +9,10 @@ import org.xml.sax.InputSource;
 
 public class JR {
     public static void main(String[] args) {
-        // zadacha24();
-        // zadacha41(10);
-        // zadacha42(10, 20);
-        // zadacha43();
-        // zadacha44();
-        // zadacha51(5);
-        // zadacha63();
-        zadacha64();
+        // zadacha24(); // zadacha41(10); // zadacha42(10, 20); // zadacha43(); //
+        // zadacha44(); // zadacha51(5); // zadacha63(); // zadacha64();
+        // zadacha65();
+        zadacha66();
     }
 
     public static void zadacha24() {
@@ -192,5 +188,53 @@ public class JR {
         System.out.printf("минимальное число в массиве => %d \n", min);
         System.out.printf("максимальное число в массиве => %d", max);
     }
+
+    public static void zadacha65() {
+        String[] arrayS = { "Hello", "Hello", "World", "Java", "Tasks", "World" };
+        System.out.println(Arrays.toString(arrayS));
+
+        // int[] ars = new
+        for (int i = 0; i < arrayS.length; i++) {
+            String stemp = arrayS[i];
+            for (int j = i + 1; j < arrayS.length; j++) {
+                if (stemp == null) {
+                    break;
+                }
+                if (stemp.equals(arrayS[j])) {
+                    arrayS[i] = null;
+                    arrayS[j] = null;
+                }
+            }
+        }
+
+        System.out.println(Arrays.toString(arrayS));
+
+    }
+
+    public static void zadacha66() {
+        int[][] MULTIPLICATION_TABLE = new int[10][10];
+        for (int i = 1; i < MULTIPLICATION_TABLE.length + 1; i++) {
+            for (int j = 1; j < MULTIPLICATION_TABLE.length + 1; j++) {
+                MULTIPLICATION_TABLE[i - 1][j - 1] = i * j;
+            }
+        }
+        for (int i = 0; i < MULTIPLICATION_TABLE.length; i++) {
+            System.out.println(Arrays.toString(MULTIPLICATION_TABLE[i]));
+        }
+        System.out.println("----------------------------------");
+        int[][] array = new int[10][];
+        for (int i = 0; i < 10; i++) {
+            array[i] = new int[i+1];
+        }
+        
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = i+j;
+            }
+            System.out.println(Arrays.toString(array[i]));
+        }
+    }
+
+
 
 }
