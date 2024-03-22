@@ -1,25 +1,31 @@
-package ru.geekbrains.oop.lesson3.task2;
+package lesson3;
 
-import java.util.Arrays;
+/**
+ * Рабочий (работает с 9 до 18,
+ * получает фиксированную заработную плату)
+ */
+public class Worker extends Employee {
 
-public class Program {
+    
 
-    public static void main(String[] args) {
-
-        Worker[] workers = EmployeeFabric.generateEmployees(15);
-        for (Worker worker : workers) {
-            System.out.println(worker);
-        }
-
-        System.out.println();
-        System.out.println("***");
-        System.out.println();
-
-        Arrays.sort(workers);
-
-        for (Worker worker : workers) {
-            System.out.println(worker);
-        }
+    private Worker(String surName, String name, double salary, int age) {
+        super(surName, name,  salary, age);
+        
     }
 
+    public static Worker create(String surName, String name, double salary, int age) {
+        return new Worker(surName, name, salary, age);
+    }
+
+   
+    @Override
+    public String toString() {
+        return String.format("%s %s; ставка: %.2f руб.; заработная плата: %.2f руб.; возраст: %d",
+                surName, name, salary, calculateSalary(), age);
+    }
+
+    @Override
+    public double calculateSalary() {
+        return salary;
+    }
 }
