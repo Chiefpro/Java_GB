@@ -1,4 +1,4 @@
-package ru.geekbrains.oop.lesson3.task2;
+package lesson3;
 
 import java.util.Arrays;
 
@@ -12,7 +12,7 @@ public class Program {
         }
 
         System.out.println();
-        System.out.println("***");
+        System.out.println("--------------------------------");
         System.out.println();
 
 //  Arrays.sort(employees);
