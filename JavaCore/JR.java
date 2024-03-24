@@ -235,7 +235,9 @@ public class JR {
         }
     }
 
-    public static
+    public static void zadacha67(){
+        
+    }
 
 
 }
