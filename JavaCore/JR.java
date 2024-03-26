@@ -12,7 +12,9 @@ public class JR {
         // zadacha24(); // zadacha41(10); // zadacha42(10, 20); // zadacha43(); //
         // zadacha44(); // zadacha51(5); // zadacha63(); // zadacha64();
         // zadacha65();
-        zadacha66();
+        // zadacha67(7, 4, 8);
+        zadacha68();
+        
     }
 
     public static void zadacha24() {
@@ -224,20 +226,38 @@ public class JR {
         System.out.println("----------------------------------");
         int[][] array = new int[10][];
         for (int i = 0; i < 10; i++) {
-            array[i] = new int[i+1];
+            array[i] = new int[i + 1];
         }
-        
+
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = i+j;
+                array[i][j] = i + j;
             }
             System.out.println(Arrays.toString(array[i]));
         }
     }
 
-    public static void zadacha67(){
-        
+    public static void zadacha67(int longArrya, int valueStart, int valueEnd){
+        int[] array = new int[longArrya];
+        if (array.length % 2 == 0) {
+            Arrays.fill(array, 0, array.length/2, valueStart );
+            Arrays.fill(array, array.length/2, array.length, valueEnd );
+        }
+        else{
+            Arrays.fill(array, 0, array.length/2+1, valueStart );
+            Arrays.fill(array, array.length/2+1, array.length, valueEnd );
+        }
+
+        System.out.println(Arrays.toString(array));
     }
 
-
+    public static void zadacha68(){
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+        System.out.println(Arrays.toString(array));
+        int[] array2 = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            array2[array.length-1 - i] = array[i];
+        }
+        System.out.println(Arrays.toString(array2));
+    }
 }
