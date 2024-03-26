@@ -13,8 +13,8 @@ public class JR {
         // zadacha44(); // zadacha51(5); // zadacha63(); // zadacha64();
         // zadacha65();
         // zadacha67(7, 4, 8);
-        zadacha68();
-        
+        System.out.println(zadacha68(3));
+
     }
 
     public static void zadacha24() {
@@ -237,27 +237,28 @@ public class JR {
         }
     }
 
-    public static void zadacha67(int longArrya, int valueStart, int valueEnd){
+    public static void zadacha67(int longArrya, int valueStart, int valueEnd) {
         int[] array = new int[longArrya];
         if (array.length % 2 == 0) {
-            Arrays.fill(array, 0, array.length/2, valueStart );
-            Arrays.fill(array, array.length/2, array.length, valueEnd );
-        }
-        else{
-            Arrays.fill(array, 0, array.length/2+1, valueStart );
-            Arrays.fill(array, array.length/2+1, array.length, valueEnd );
+            Arrays.fill(array, 0, array.length / 2, valueStart);
+            Arrays.fill(array, array.length / 2, array.length, valueEnd);
+        } else {
+            Arrays.fill(array, 0, array.length / 2 + 1, valueStart);
+            Arrays.fill(array, array.length / 2 + 1, array.length, valueEnd);
         }
 
         System.out.println(Arrays.toString(array));
     }
 
-    public static void zadacha68(){
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+    public static int zadacha68(int cube) {
+        int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
         System.out.println(Arrays.toString(array));
         int[] array2 = new int[array.length];
         for (int i = 0; i < array.length; i++) {
-            array2[array.length-1 - i] = array[i];
+            array2[array.length - 1 - i] = array[i];
         }
         System.out.println(Arrays.toString(array2));
+        System.out.println("----------------");
+        return (int)Math.pow(cube, cube);
     }
 }
