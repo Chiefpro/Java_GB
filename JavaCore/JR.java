@@ -260,5 +260,6 @@ public class JR {
         System.out.println(Arrays.toString(array2));
         System.out.println("----------------");
         return (int)Math.pow(cube, cube);
+        
     }
 }
