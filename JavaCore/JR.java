@@ -259,7 +259,8 @@ public class JR {
         }
         System.out.println(Arrays.toString(array2));
         System.out.println("----------------");
+        double earthDiameter = 1.091678E+2;
+        System.out.println(earthDiameter);
         return (int)Math.pow(cube, cube);
-        
     }
 }
