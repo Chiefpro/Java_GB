@@ -22,7 +22,8 @@ public class Program {
         presenter.updateTablesView();
         view.reservationTable(new Date(), 2, "Станислав");
         view.changeReservationTable(1001, new Date(), 3, "Станислав");
-        view.reservationTable(new Date(), 2, "Станислав");
+        view.reservationTable(new Date(), 6, "Станислав");
+        view.reservationTable(new Date(), 4, "Станислав");
         
         
 
