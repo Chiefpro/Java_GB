@@ -1,8 +1,8 @@
 package lesson5.views;
 
-import ru.geekbrains.oop.lesson5.models.Table;
-import ru.geekbrains.oop.lesson5.presenters.View;
-import ru.geekbrains.oop.lesson5.presenters.ViewObserver;
+import lesson5.models.Table;
+import lesson5.presenters.View;
+import lesson5.presenters.ViewObserver;
 
 import java.util.ArrayList;
 import java.util.Collection;
