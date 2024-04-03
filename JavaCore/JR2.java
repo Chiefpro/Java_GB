@@ -30,6 +30,7 @@ public class JR2 {
             min = Math.min(min, array[i]);
         }
         return min;
+        
     }
 
 }
