@@ -1,4 +1,4 @@
-package lesson7;
+
 
 public class Master implements Observer {
 

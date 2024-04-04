@@ -1,4 +1,4 @@
-package lesson7;
+
 
 public class Middle implements Observer{
 
