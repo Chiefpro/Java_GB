@@ -1,5 +1,9 @@
 package lesson7;
 
-public class Observer {
+public interface Observer {
+
+    boolean isInterested(VacancyType type);
+    
+    void receiveOffer(String nameCompany, int salary);
 
 }

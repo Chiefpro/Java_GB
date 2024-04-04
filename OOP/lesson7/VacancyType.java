@@ -1,5 +1,7 @@
 package lesson7;
 
-public class VacancyType {
-
+public enum VacancyType {
+    JAVA_DEVELOPER,
+    UX_DESIGNER,
+    QA;
 }
