@@ -31,6 +31,7 @@ public class JR2 {
         }
         return min;
         
+        
     }
 
 }
